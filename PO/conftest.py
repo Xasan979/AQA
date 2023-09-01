@@ -4,7 +4,7 @@ import mysql.connector
 
 from selenium import webdriver
 
-DRIVERS = os.path.expanduser("~/Downloads/drivers")
+DRIVERS = r"C:\Users\vybor\PycharmProjects\Программы\chromedriver-win32"
 
 
 def pytest_addoption(parser):
@@ -27,10 +27,14 @@ def browser(request):
     common_caps = {"pageLoadStrategy": "eager"}
 
     if executor == "local":
-        driver = webdriver.Chrome(
-            executable_path=f"{DRIVERS}/chromedriver",
-            desired_capabilities=common_caps
-        )
+        options = webdriver.ChromeOptions()
+        options.add_argument(f"--executable-path={DRIVERS}/chromedriver.exe")
+
+        driver = webdriver.Chrome(options=options)
+
+
+
+
     else:
 
         desired_capabilities = {
