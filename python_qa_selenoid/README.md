@@ -26,7 +26,9 @@ Selenoid - это современный инструмент для автом�
 
       cm_windows_amd64.exe selenoid-ui start --vnc
       http://localhost:8080/#/
-      
+
+![2023-09-07_13-43-01](https://github.com/Xasan979/AQA/assets/95925259/59a1bbc4-bd07-4ee5-b64f-32ad0a12df47)     
+
 ### vnc
 Основное использование опции --vnc в Selenoid:
 
@@ -41,10 +43,7 @@ Selenoid - это современный инструмент для автом�
     
 ![2023-09-07_13-24-14](https://github.com/Xasan979/AQA/assets/95925259/ccdffd09-5272-4883-a8db-5dc501b01e3a)
 
-
-
 ### Команды 
-![2023-09-07_13-43-01](https://github.com/Xasan979/AQA/assets/95925259/59a1bbc4-bd07-4ee5-b64f-32ad0a12df47)
 ![2023-09-07_13-43-23](https://github.com/Xasan979/AQA/assets/95925259/c49fa7b6-5fcb-481b-aa08-48c5be6d1d0a)
 
 ### Обязательно прописать конфигурации в browsers.json
